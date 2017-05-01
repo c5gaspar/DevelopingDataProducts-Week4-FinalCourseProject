@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "\n# This is the server logic for a Shiny web application.\n# You can find out more about building applications with Shiny here:\n#\n# http://shiny.rstudio.com\n#\n\nlibrary(shiny)\nlibrary(ggplot2)\n\nshinyServer(function(input, output) {\n        \n        output$plot <- renderPlot({\n                \n                ggplot(data=mtcars, aes_string(x=input$regressors, y=\"mpg\"))+\n                        geom_point()+\n                        geom_smooth(method=\"lm\", fill=\"lightgreen\", colour=\"blue\")+\n                        theme_bw()+\n                        labs(title=paste(\"MPG x\", toupper(input$regressors)),\n                             y=\"Miles per Gallon (MPG)\")\n        })\n        \n        \n        })\n\n",
+    "created" : 1493594497818.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1311360313",
+    "id" : "744D2948",
+    "lastKnownWriteTime" : 1493597831,
+    "last_content_update" : 1493597831596,
+    "path" : "~/GitHub Repos/DevelopingDataProducts-Week4-FinalCourseProject/fuelPrediction/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

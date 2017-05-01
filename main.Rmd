@@ -1,0 +1,35 @@
+---
+title: "Introducing 'mtcars' Predict: An Interactive Gadget to Motivate Regression Learning "
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+require(knitr)
+```
+
+## Introduction
+
+Statistics are boring, right? Dead wrong, and the purpose of this presentation to show you how regression is as easy as `2 + 2` = ``r 2+2``! 
+
+## `mtcars`
+
+`mtcars` is a dataset from the 1974 Motor Trend US magazine which provides automotive measurements of cars at the time. An example of some of these measured variables are:
+
+* Fuel economy;
+* Transmission type;
+* Engine type.
+
+Below is a brief look into the `mtcars` dataset,
+
+```{r}
+kable(head(mtcars, 5), align="c")
+```
+
+## The How
+
+Using these variables, my gadget demonstrates the statistical ability to develop prediction models upon the fuel economy variable. 
+
+## The Result
+
+Using an interactive approach to regression, my gadget inspires an interest within learners in statistics.

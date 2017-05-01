@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "\n# This is the user-interface definition of a Shiny web application.\n# You can find out more about building applications with Shiny here:\n#\n# http://shiny.rstudio.com\n#\n\nlibrary(shiny)\ndata(mtcars)\n\nshinyUI(fluidPage(\n        \n        # Sidebar with a slider input for number of bins\n        sidebarLayout(\n                sidebarPanel(\n                        radioButtons(inputId = \"regressors\", \n                                     label = \"Regressors\",\n                                     selected = \"wt\",\n                                     choices = names(mtcars)[2:11],\n                                     inline = FALSE,\n                                     width = \"100%\")\n                ),\n                \n                \n                # Show a plot of the generated distribution\n                mainPanel(\n                        plotOutput(\"plot\")\n                ))\n)\n)\n",
+    "created" : 1493594497436.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "631531780",
+    "id" : "44833CA0",
+    "lastKnownWriteTime" : 1493597806,
+    "last_content_update" : 1493597806048,
+    "path" : "~/GitHub Repos/DevelopingDataProducts-Week4-FinalCourseProject/fuelPrediction/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
